@@ -1,0 +1,51 @@
+:root {
+  --background: white;
+  --color-primary: #282828;
+}
+
+body {
+  background-color: var(--background);
+  height: 100vh;
+  box-sizing: border-box;
+  overscroll-behavior-y: none;
+  margin: 1rem;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+.image-container-original {
+  max-width: 80%;
+  position: relative;
+  box-sizing: border-box;
+}
+.image-container-modified {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  box-sizing: border-box;
+  img {
+    border-right: 2px solid red;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+.original,
+.modified {
+  max-width: 80%;
+  // filter: blur(3px);
+  // filter: grayscale();
+  // filter: sepia();
+  // filter: brightness();
+  // filter: hue-rotate();
+  // filter: saturate();
+  // filter: opacity();
+  // filter: contrast();
+  // filter: invert();
+  // mix-blend-mode: ;
+  //shadow
+}

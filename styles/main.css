@@ -1,0 +1,51 @@
+:root {
+  --background: white;
+  --color-primary: #282828;
+}
+
+body {
+  background-color: var(--background);
+  height: 100vh;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overscroll-behavior-y: none;
+  margin: 1rem;
+  font-size: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.image-container-original {
+  max-width: 80%;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.image-container-modified {
+  max-width: 100%;
+  position: absolute;
+  top: 0;
+  pointer-events: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.image-container-modified img {
+  border-right: 2px solid red;
+}
+
+img {
+  max-width: 100%;
+}
+
+.original,
+.modified {
+  max-width: 80%;
+}
+/*# sourceMappingURL=main.css.map */
